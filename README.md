@@ -44,15 +44,4 @@ Example file:
 
 ; disable highlight current line to increase performance
 (global-hl-line-mode -1)
-
-
-; configuration loaded when executed by user
-(defun example-configuration () (interactive)
-       ; multi-compile
-       (setq multi-compile-alist `(
-                                   ("\\.*" . (("compilation-name" . ,(concat "compilation command"))
-                                              ("other-compilation-name" . ,(concat "second compilation command"))
-                                              ))
-                                   ))
-)
 ```
