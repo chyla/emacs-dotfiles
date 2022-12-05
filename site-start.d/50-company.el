@@ -5,3 +5,6 @@
 
 (setq company-minimum-prefix-length 1)
 (setq company-idle-delay 0.3)
+
+(setq company-dabbrev-minimum-length 3)
+
