@@ -8,5 +8,6 @@
 (load-file (concat site-start-directory "50-company.el"))
 (load-file (concat site-start-directory "50-diff-hl-mode.el"))
 (load-file (concat site-start-directory "50-flycheck.el"))
+(load-file (concat site-start-directory "50-recentf.el"))
 (load-file (concat site-start-directory "50-ttcn-mode.el"))
 (load-file (concat site-start-directory "50-yasnippet.el"))
