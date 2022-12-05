@@ -1,0 +1,16 @@
+/abbrev_defs
+/bookmarks
+/elpa/archives
+/elpa/gnupg
+/elpa/*.signed
+/elpa/*.txt
+/eshell
+/places
+/recentf
+/transient
+/user-start.d
+/user-yasnippets.d
+*~
+\#*#
+*.elc
+
