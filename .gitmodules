@@ -1,0 +1,3 @@
+[submodule "extensions/kill-file-path"]
+	path = extensions/kill-file-path
+	url = https://github.com/chyla/kill-file-path
