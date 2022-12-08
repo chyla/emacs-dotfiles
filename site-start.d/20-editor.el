@@ -54,6 +54,9 @@
 ; The value is in 1/10pt, so 100 will give you 10pt
 (set-face-attribute 'default nil :height 120)
 
+;; force use of spaces, not tabs
+(setq-default indent-tabs-mode nil)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;; SETTINGS IMPACTING PERFORMANCE
