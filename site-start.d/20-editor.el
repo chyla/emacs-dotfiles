@@ -42,9 +42,13 @@
 ; don't wrap long lines
 (setq-default truncate-lines 1)
 
-; smooth scrolling
-; https://www.gnu.org/software/emacs/manual/html_node/emacs/Auto-Scrolling.html#Auto-Scrolling
+;; smooth scrolling on keyboard
+;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Auto-Scrolling.html#Auto-Scrolling
 (setq scroll-step 1)
+
+;; smooth scrolling on mouse
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
+(setq mouse-wheel-progressive-speed nil)
 
 ; set the font size
 ; The value is in 1/10pt, so 100 will give you 10pt
