@@ -7,6 +7,7 @@
 (load-file (concat site-start-directory "50-ace-window.el"))
 (load-file (concat site-start-directory "50-company.el"))
 (load-file (concat site-start-directory "50-diff-hl-mode.el"))
+(load-file (concat site-start-directory "50-ethan-wspace.el"))
 (load-file (concat site-start-directory "50-flycheck.el"))
 (load-file (concat site-start-directory "50-kill-file-path.el"))
 (load-file (concat site-start-directory "50-recentf.el"))
