@@ -57,6 +57,9 @@
 ;; force use of spaces, not tabs
 (setq-default indent-tabs-mode nil)
 
+; line numbers
+(global-display-line-numbers-mode t)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;; SETTINGS IMPACTING PERFORMANCE
@@ -65,10 +68,6 @@
 ; fix showing question marks with line-mode enabled
 ; https://emacs.stackexchange.com/questions/3824/what-piece-of-code-in-emacs-makes-line-number-mode-print-as-line-number-i
 (setq line-number-display-limit-width 2000000) ; invisible impact on performance
-
-; line numbers
-(global-linum-mode t) ; performance issue with long lines
-(setq linum-format "%5i   \u2502 ")
 
 ; highlight current line
 (global-hl-line-mode 1) ; performance issue with long lines
