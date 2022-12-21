@@ -6,8 +6,10 @@ My configuration for Emacs, may not be useful for you.
 ## Getting Started
 
 Clone the repository into the `~/.emacs.d/` directory and run the Emacs.
-When you clone the repository or pull new changes please recompile the elisp
-files. You can execute the `recompile-elisp` command.
+When you clone the repository or pull new changes please:
+
+- init and update git submodules with: `git submodule init ; git submodule update`
+- recompile the elisp files, you can execute the `recompile-elisp` command.
 
 
 ### Recomended software
