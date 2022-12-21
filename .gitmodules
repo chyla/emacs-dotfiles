@@ -1,0 +1,3 @@
+[submodule "extensions/ttcn-el"]
+	path = extensions/ttcn-el
+	url = https://github.com/chyla/ttcn-el
