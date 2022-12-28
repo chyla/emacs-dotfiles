@@ -12,4 +12,3 @@
 (setq company-idle-delay 0.2)
 
 (setq company-dabbrev-minimum-length 3)
-
