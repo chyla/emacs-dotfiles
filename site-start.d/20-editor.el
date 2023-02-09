@@ -1,45 +1,45 @@
-; hide welcome screen, splash screen and startup message
+;; hide welcome screen, splash screen and startup message
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-message t)
 (setq initial-scratch-message nil)
 
-; disable toolbar
+;; disable toolbar
 (tool-bar-mode -1)
 
-; disable scrollbar 
+;; disable scrollbar 
 (scroll-bar-mode -1)
 
-; frame title with file name
+;; frame title with file name
 (setq frame-title-format "emacs: %b")
 
-; save the cursor position for every file you opened. So, next time you open
-; the file, the cursor will be at the position you last opened it.
+;; save the cursor position for every file you opened. So, next time you open
+;; the file, the cursor will be at the position you last opened it.
 (if (version< emacs-version "25.0")
     (progn
       (require 'saveplace)
       (setq-default save-place t))
   (save-place-mode 1))
 
-; show cursor position within line on status bar
+;; show cursor position within line on status bar
 (column-number-mode 1)
 
-; blink cursor
+;; blink cursor
 (blink-cursor-mode 1) ;; -1 to turn it off
 
-; turn on highlight matching brackets when cursor is on one
+;; turn on highlight matching brackets when cursor is on one
 (show-paren-mode 1)
 (setq show-paren-style 'parenthesis)
 
-; complete brackets automatically
+;; complete brackets automatically
 (electric-pair-mode 1)
-; but not in the minibuffer
+;; but not in the minibuffer
 (defun pvj/inhibit-electric-pair-mode (char) (minibufferp))
 (setq electric-pair-inhibit-predicate #'pvj/inhibit-electric-pair-mode)
 
-; scroll compilation output
+;; scroll compilation output
 (setq compilation-scroll-output 1)
 
-; don't wrap long lines
+;; don't wrap long lines
 (setq-default truncate-lines 1)
 
 ;; smooth scrolling on keyboard
@@ -55,15 +55,20 @@
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
 
-; set the font size
-; The value is in 1/10pt, so 100 will give you 10pt
+;; set the font size
+;; The value is in 1/10pt, so 100 will give you 10pt
 (set-face-attribute 'default nil :height 110)
 
 ;; force use of spaces, not tabs
 (setq-default indent-tabs-mode nil)
 
-; line numbers
+;; line numbers
 (global-display-line-numbers-mode t)
+
+;; column indicator
+;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Displaying-Boundaries.html
+(global-display-fill-column-indicator-mode)
+(setq display-fill-column-indicator-column 80)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
