@@ -46,6 +46,11 @@
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Auto-Scrolling.html#Auto-Scrolling
 (setq scroll-step 1)
 
+;; horizontal smooth scrolling on keyboard
+;; http://www.gnu.org/software/emacs/manual/html_node/emacs/Horizontal-Scrolling.html
+(setq hscroll-margin 1)
+(setq hscroll-step 2)
+
 ;; smooth scrolling on mouse
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
