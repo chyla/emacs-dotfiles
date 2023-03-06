@@ -1,2 +1,0 @@
-;;; Generated package description from kill-file-path-20221205.1119/kill-file-path.el  -*- no-byte-compile: t -*-
-(define-package "kill-file-path" "20221205.1119" "Copy file name into kill ring" '((emacs "26")) :commit "88de62d038d7e6e0e0a217c4773a1871549c7c3d" :authors '(("Adam Chyła" . "adam@chyla.org")) :maintainer '("Adam Chyła" . "adam@chyla.org") :keywords '("files") :url "https://github.com/chyla/kill-file-path/kill-file-path.el")
