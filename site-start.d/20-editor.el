@@ -6,7 +6,7 @@
 ;; disable toolbar
 (tool-bar-mode -1)
 
-;; disable scrollbar 
+;; disable scrollbar
 (scroll-bar-mode -1)
 
 ;; frame title with file name
@@ -61,6 +61,9 @@
 
 ;; force use of spaces, not tabs
 (setq-default indent-tabs-mode nil)
+
+;; use 4 spaces indentation for c/cpp
+(setq c-basic-offset 4)
 
 ;; line numbers
 (global-display-line-numbers-mode t)
