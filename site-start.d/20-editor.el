@@ -7,7 +7,8 @@
 (tool-bar-mode -1)
 
 ;; disable scrollbar
-(scroll-bar-mode -1)
+(if (boundp 'x-toolkit-scroll-bars)
+    (scroll-bar-mode -1))
 
 ;; frame title with file name
 (setq frame-title-format "emacs: %b")
