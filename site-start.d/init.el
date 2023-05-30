@@ -12,3 +12,4 @@
 (load-file (concat site-start-directory "50-recentf.el"))
 (load-file (concat site-start-directory "50-ttcn-mode.el"))
 (load-file (concat site-start-directory "50-yasnippet.el"))
+(load-file (concat site-start-directory "50-ws-butler.el"))
