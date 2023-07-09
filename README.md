@@ -26,6 +26,21 @@ Install your favorite checkers for Flycheck, eg:
 
 You can verify installed checkers with `flycheck-verify-checker` command.
 
+#### LanguageTool
+
+1. Download LanguageTool from https://languagetool.org/download/.
+
+2. Extract on to your local machine.
+
+3. Add the following snippet to your configuration.
+
+```
+(use-package flycheck-languagetool
+  :ensure t
+  :hook (text-mode . flycheck-languagetool-setup)
+  :init
+  (setq flycheck-languagetool-server-jar "path/to/LanguageTool-X.X/languagetool-server.jar"))
+```
 
 ### Custom yasnippets
 
