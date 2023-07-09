@@ -12,7 +12,7 @@ When you clone the repository or pull new changes please:
 - recompile the elisp files, you can execute the `recompile-elisp` command.
 
 
-### Recomended software
+### Recommended software
 
 #### Flycheck
 
