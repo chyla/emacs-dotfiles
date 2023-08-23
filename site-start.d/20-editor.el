@@ -11,7 +11,7 @@
     (scroll-bar-mode -1))
 
 ;; frame title with file name
-(setq frame-title-format "emacs: %b")
+(setq frame-title-format "%b")
 
 ;; save the cursor position for every file you opened. So, next time you open
 ;; the file, the cursor will be at the position you last opened it.
