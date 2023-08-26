@@ -3,8 +3,7 @@
 # key: header-bsd3
 # --
 /*
- * Copyright (c) 2019, ${1:Author Name} <${2:awesome@mail.com}>.
- * All rights reserved.
+ * Copyright (c) ${1:Year}, ${2:Author Name} <${3:awesome@mail.com}>.
  *
  * Distributed under the terms of the BSD 3-Clause License.
  */
