@@ -21,6 +21,12 @@
       (setq-default save-place t))
   (save-place-mode 1))
 
+;; actions for displaying buffers
+;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Buffer-Display-Action-Functions.html
+(setq display-buffer-alist '(
+    ("\\*" display-buffer-at-bottom) ;; special buffers at bottom
+))
+
 ;; show cursor position within line on status bar
 (column-number-mode 1)
 
