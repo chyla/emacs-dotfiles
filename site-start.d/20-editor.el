@@ -24,7 +24,7 @@
 ;; actions for displaying buffers
 ;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Buffer-Display-Action-Functions.html
 (setq display-buffer-alist '(
-    ("\\*" display-buffer-at-bottom) ;; special buffers at bottom
+    ("\\*" display-buffer-reuse-window display-buffer-at-bottom) ;; special buffers at bottom
 ))
 (setq display-buffer-base-action '(display-buffer-in-side-window))
 
