@@ -39,7 +39,7 @@
 (setq show-paren-style 'parenthesis)
 
 ;; complete brackets automatically
-(electric-pair-mode 1)
+;; (electric-pair-mode 1)
 ;; but not in the minibuffer
 (defun pvj/inhibit-electric-pair-mode (char) (minibufferp))
 (setq electric-pair-inhibit-predicate #'pvj/inhibit-electric-pair-mode)
