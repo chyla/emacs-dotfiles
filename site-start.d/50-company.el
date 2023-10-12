@@ -14,3 +14,7 @@
 (setq company-idle-delay 0.2)
 
 (setq company-dabbrev-minimum-length 3)
+
+(setq company-transformers '(delete-consecutive-dups
+                             company-sort-by-occurrence))
+(setq company-occurrence-weight-function 'company-occurrence-prefer-closest-above)
