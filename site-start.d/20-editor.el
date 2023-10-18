@@ -21,6 +21,9 @@
       (setq-default save-place t))
   (save-place-mode 1))
 
+;; overwrite or delete selection
+(delete-selection-mode 1)
+
 ;; actions for displaying buffers
 ;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Buffer-Display-Action-Functions.html
 (setq display-buffer-alist '(
