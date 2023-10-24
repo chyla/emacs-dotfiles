@@ -4,6 +4,7 @@
 (load-file (concat site-start-directory "20-editor.el"))
 (load-file (concat site-start-directory "30-ansi-coloring-in-compilation-mode.el"))
 (load-file (concat site-start-directory "40-recompile-elisp.el"))
+(load-file (concat site-start-directory "50-delete-without-kill-ring.el"))
 (load-file (concat site-start-directory "50-ace-window.el"))
 (load-file (concat site-start-directory "50-company.el"))
 (load-file (concat site-start-directory "50-diff-hl-mode.el"))
