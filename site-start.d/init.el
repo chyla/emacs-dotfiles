@@ -14,4 +14,5 @@
 (load-file (concat site-start-directory "50-ttcn-mode.el"))
 (load-file (concat site-start-directory "50-yasnippet.el"))
 (load-file (concat site-start-directory "50-ws-butler.el"))
+(load-file (concat site-start-directory "50-pin-buffer.el"))
 (load-file (concat site-start-directory "100-bindings.el"))
