@@ -29,7 +29,7 @@
 (setq display-buffer-alist '(
     ("\\*" display-buffer-reuse-window display-buffer-at-bottom) ;; special buffers at bottom
 ))
-(setq display-buffer-base-action '(display-buffer-in-side-window))
+(setq display-buffer-base-action '(display-buffer-reuse-window display-buffer-in-side-window))
 
 ;; show cursor position within line on status bar
 (column-number-mode 1)
