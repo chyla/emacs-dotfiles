@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: fori
-# key: fori
+# name: forn
+# key: forn
 # --
 for (${1:var integer }${2:i} := 0; $2 < $3; $2 := $2 + 1)
 {
