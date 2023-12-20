@@ -86,7 +86,7 @@
 ;; column indicator
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Displaying-Boundaries.html
 (global-display-fill-column-indicator-mode)
-(setq display-fill-column-indicator-column 80)
+(setq-default fill-column 80)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
