@@ -66,9 +66,13 @@
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
 
+;; set font family
+;;(set-frame-font "Source Code Pro" nil t)
+(set-face-attribute 'default nil :family "Source Code Pro")
+
 ;; set the font size
 ;; The value is in 1/10pt, so 100 will give you 10pt
-(set-face-attribute 'default nil :height 110)
+(set-face-attribute 'default nil :height 105)
 
 ;; force use of spaces, not tabs
 (setq-default indent-tabs-mode nil)
