@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: forr
+# key: forr
+# --
+for (${1:const auto &}${2:x} : ${3:container})
+{
+    $0
+}
