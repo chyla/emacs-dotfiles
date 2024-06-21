@@ -1,5 +1,7 @@
 (add-hook 'after-init-hook 'global-company-mode)
 
+(add-hook 'shell-mode-hook (lambda() (company-mode 0)))
+
 (setq company-backends '( (
     company-keywords
     company-yasnippet
