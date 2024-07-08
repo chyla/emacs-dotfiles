@@ -1,9 +1,10 @@
-;;; chyla-theme.el --- chyla.org - green color theme.
+;;; chyla-theme.el --- Chyla.org - green color theme -*- lexical-binding: nil; -*-
 
-;; Copyright (C) 2018-2023 Adam Chyła
+;; Copyright (C) 2018-2024 Adam Chyła
 ;; Author: Adam Chyła <adam@chyla.org> https://chyla.org/
 ;; URL: https://github.com/chyla/ChylaThemeForEmacs
 ;; Version: 0.1
+;; Package-Requires: ((emacs "24.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -29,7 +30,7 @@
 
 ;;; Code:
 
-(deftheme chyla "The chyla.org color theme")
+(deftheme chyla "The chyla.org color theme.")
 
 ;;; Color Palette
 
@@ -99,6 +100,25 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(success ((t (:foreground ,chyla-comment :weight bold))))
    `(warning ((t (:foreground ,chyla-text :weight bold))))
    `(tooltip ((t (:foreground ,chyla-text :background ,chyla-white))))
+;;;;; ansi-color
+   `(ansi-color-black ((t (:foreground ,chyla-white
+                                       :background ,chyla-selection))))
+   `(ansi-color-red ((t (:foreground ,chyla-comment
+                                     :background ,chyla-comment))))
+   `(ansi-color-green ((t (:foreground ,chyla-comment
+                                       :background ,chyla-comment))))
+   `(ansi-color-yellow ((t (:foreground ,chyla-comment
+                                        :background ,chyla-keyword))))
+   `(ansi-color-blue ((t (:foreground ,chyla-constant
+                                      :background ,chyla-comment))))
+   `(ansi-color-magenta ((t (:foreground ,chyla-comment
+                                         :background ,chyla-string))))
+   `(ansi-color-cyan ((t (:foreground ,chyla-function
+                                      :background ,chyla-comment))))
+   `(ansi-color-white ((t (:foreground ,chyla-comment
+                                       :background ,chyla-comment))))
+   '(ansi-default-fg-color ((t (:inherit ansi-color-white))))
+   '(ansi-default-bg-color ((t (:inherit ansi-color-black))))
 ;;;;; compilation
    `(compilation-column-face ((t (:foreground ,chyla-keyword))))
    `(compilation-enter-directory-face ((t (:foreground ,chyla-comment))))
@@ -312,9 +332,9 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((,class (:background ,chyla-white :foreground ,chyla-text :bold t))
       (t (:background ,chyla-text :foreground ,chyla-white :bold t))))
 ;;;;; diff-hl
-   `(diff-hl-change ((,class (:foreground ,chyla-text :background ,chyla-diff-added))))
-   `(diff-hl-delete ((,class (:foreground ,chyla-text :background ,chyla-diff-removed-highlight))))
-   `(diff-hl-insert ((,class (:foreground ,chyla-text :background ,chyla-diff-added-highlight))))
+   `(diff-hl-change ((,class (:foreground ,chyla-text :background ,chyla-diff-changed))))
+   `(diff-hl-delete ((,class (:foreground ,chyla-text :background ,chyla-diff-removed))))
+   `(diff-hl-insert ((,class (:foreground ,chyla-text :background ,chyla-diff-added))))
 ;;;;; dim-autoload
    `(dim-autoload-cookie-line ((t :foreground ,chyla-white)))
 ;;;;; dired+
@@ -1226,8 +1246,7 @@ Also bind `class' to ((class color) (min-colors 89))."
   `(elscreen-tab-background-face ((t (:background ,chyla-keyword))))
   `(elscreen-tab-control-face ((t (:foreground ,chyla-white :background ,chyla-keyword))))
   `(elscreen-tab-current-screen-face ((t (:foreground ,chyla-text :background ,chyla-selection))))
-  `(elscreen-tab-other-screen-face ((t (:foreground ,chyla-text :background ,chyla-highlight))))
-  ))
+  `(elscreen-tab-other-screen-face ((t (:foreground ,chyla-text :background ,chyla-highlight))))))
 
 ;;; Theme Variables
 (chyla-with-color-variables
@@ -1265,8 +1284,7 @@ Also bind `class' to ((class color) (min-colors 89))."
        (340. . ,chyla-keyword)
        (360. . ,chyla-comment)))
    `(vc-annotate-very-old-color ,chyla-comment)
-   `(vc-annotate-background ,chyla-selection)
-   ))
+   `(vc-annotate-background ,chyla-selection)))
 
 ;;; Footer
 

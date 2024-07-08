@@ -1,4 +1,4 @@
-(define-package "zenburn-theme" "20240331.1350" "A low contrast color theme for Emacs." 'nil :commit "14dda0596a7cd0750fc6566eacc203a126f136c2" :authors
+(define-package "zenburn-theme" "20240612.1258" "A low contrast color theme for Emacs." 'nil :commit "15f48bfc6b52d112f3c3fd98e533bda9138ffdd2" :authors
   '(("Bozhidar Batsov" . "bozhidar@batsov.com"))
   :maintainers
   '(("Bozhidar Batsov" . "bozhidar@batsov.com"))
