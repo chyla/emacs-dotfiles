@@ -11,7 +11,7 @@
 )))
 
 (setq company-dabbrev-downcase nil)
-(setq company-dabbrev-ignore-buffers "\\`[ *]\\|TAGS\\|magit.*:.*")
+(setq company-dabbrev-ignore-buffers "\\`[ *]\\|TAGS\\|magit.*:.*|\\*shell\\*")
 
 (setq company-minimum-prefix-length 1)
 (setq company-idle-delay 0.2)
