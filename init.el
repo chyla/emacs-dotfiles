@@ -1,3 +1,5 @@
+;;; init.el -*- lexical-binding: nil; -*-
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;; EMACS GENERATED SETTINGS
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -34,3 +36,8 @@
     (load-file user-start-file)
   (message "Not loading user-start.d/init.el file, doesn't exist.")
 )
+
+;; Local Variables:
+;; no-byte-compile: t
+;; End:
+;;; init.el ends here
