@@ -3,6 +3,11 @@
   (interactive)
   (recentf-open-files))
 
+(defun pff ()
+  "Call project-find-file."
+  (interactive)
+  (project-find-file))
+
 (defun light ()
   "Load light chyla.org theme."
   (interactive)
