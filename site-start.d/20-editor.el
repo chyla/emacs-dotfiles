@@ -97,5 +97,5 @@
 ; https://emacs.stackexchange.com/questions/3824/what-piece-of-code-in-emacs-makes-line-number-mode-print-as-line-number-i
 (setq line-number-display-limit-width 2000000) ; invisible impact on performance
 
-; highlight current line
-(global-hl-line-mode 1) ; performance issue with long lines
+; don't highlight current line
+(global-hl-line-mode 0) ; performance issue with long lines
